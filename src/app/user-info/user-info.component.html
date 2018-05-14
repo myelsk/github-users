@@ -1,0 +1,7 @@
+<button (click)="goBack()">go back</button>
+<div *ngIf="user">
+    <p>Имя - {{ user.name }}</p>
+    <p>Местоположение  - {{ user.location }}</p>
+    <p>Кол-во репозиториев  - {{ user.public_repos }}</p>
+    <p>Фолловеров  - {{ user.followers }}</p>
+</div>
