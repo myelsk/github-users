@@ -19,4 +19,6 @@ export class UserService {
     this.LoginSource.next(login);
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
+}

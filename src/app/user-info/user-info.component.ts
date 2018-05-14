@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { Location } from '@angular/common';
- 
+
 @Component({
   selector: 'app-user-info',
   templateUrl: './user-info.component.html',
@@ -16,7 +16,6 @@ export class UserInfoComponent implements OnInit {
 
   message: string;
   user: object;
-  error: string;
 
 
   goBack(): void {
