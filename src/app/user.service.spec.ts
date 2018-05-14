@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { RieltorService } from './rieltor.service';
+import { UserService } from './user.service';
 
-describe('RieltorService', () => {
+describe('UserService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [RieltorService]
+      providers: [UserService]
     });
   });
 
-  it('should be created', inject([RieltorService], (service: RieltorService) => {
+  it('should be created', inject([UserService], (service: UserService) => {
     expect(service).toBeTruthy();
   }));
 });

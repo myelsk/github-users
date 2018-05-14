@@ -7,17 +7,16 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class UserService {
 
-public LoginSource = new BehaviorSubject<string>();
+  public LoginSource = new BehaviorSubject<string>();
 
-currentLogin = this.LoginSource.asObservable();
+  currentLogin = this.LoginSource.asObservable();
 
-getUserInfo(searchUrl): any {
-  return this.http.get(searchUrl);
-}
+  getUserInfo(searchUrl): any {
+    return this.http.get(searchUrl);
+  }
 
-getLogin(login: string) {
-  this.LoginSource.next(login);
-}
+  getLogin(login: string) {
+    this.LoginSource.next(login);
+  }
 
-constructor(private http: HttpClient) { }
-}
+  constructor(private http: HttpClient) { }
