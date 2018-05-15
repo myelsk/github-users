@@ -14,7 +14,7 @@ export class UserInfoComponent implements OnInit {
       private location: Location
   ) { }
 
-  message: string;
+  login: string;
   user: object;
 
 
@@ -24,11 +24,11 @@ export class UserInfoComponent implements OnInit {
 
   ngOnInit() {
 
-    this.userService.currentLogin.subscribe(message => this.message = message);
+    this.userService.currentLogin.subscribe(login => this.login = login);
 
 
-    this.userService.getUserInfo('https://api.github.com/users/' + this.message).subscribe(
-      data => this.user = data,
+    this.userService.getUserInfo('https://api.github.com/users/' + this.login).subscribe(
+      user => this.user = user,
     );
   }
 
