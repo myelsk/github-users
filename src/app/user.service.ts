@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class UserService {
 
-  public LoginSource = new BehaviorSubject<string>();
+  public LoginSource = new BehaviorSubject<string>('');
 
   currentLogin = this.LoginSource.asObservable();
 
